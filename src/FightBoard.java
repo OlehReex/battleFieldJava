@@ -16,7 +16,7 @@ public abstract class FightBoard {
                         if(dot == -1) total += dot;
                     }
                     if ((total * -1 + 1) == ship.getCoordinates().size()) {
-                        System.out.println("\u001B[31m" + "Точное попадание! Убил!" + "\u001B[0m");
+                        System.out.println("\u001B[31m" + "Точkное попадание! Убил!" + "\u001B[0m");
                         ship.changeCoordinates(id, i, shot);
                         Ship.knockedToKilled(id);
                     }
